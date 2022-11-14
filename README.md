@@ -29,13 +29,19 @@ To get a local copy up and running follow these simple example steps.
 - Run `npm install` to install the dependencies.
 - Run `npm start` to start the app.
 
-## Author
+## Authors
 
 👤 **Emre Karayaman**
 
 - GitHub: [@karayamanemre](https://github.com/karayamanemre)
 - Twitter: [@KarayamanEmre](https://twitter.com/KarayamanEmre)
 - LinkedIn: [Emre Karayaman](https://www.linkedin.com/in/emre-karayaman-a7b45b243/)
+
+👤 **Murithi Vitalis**
+
+- GitHub: [@githubhandle](https://github.com/svitalis123)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/vitalismutwiri)
 
 ## 🤝 Contributing
 
