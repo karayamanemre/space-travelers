@@ -1,0 +1,29 @@
+header {
+  margin: 25px 100px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+}
+
+nav ul {
+  font-size: 1.25rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+}
