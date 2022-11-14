@@ -1,7 +1,10 @@
 import React from 'react';
 
+
 export default function Missions() {
   return (
-    <div />
+    <div>
+      <h1>test missions</h1>
+    </div>
   );
-}
+} 
