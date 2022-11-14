@@ -37,6 +37,5 @@ export default function header() {
         </ul>
       </nav>
     </header>
-
   );
 }
