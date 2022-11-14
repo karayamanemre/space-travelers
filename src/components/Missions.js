@@ -31,13 +31,13 @@ const Missions = () => {
       <tbody>
         {missions.map((mission) => (
           <tr key={mission.id}>
-            <td>{mission.mission_name}</td>
+            <td><b>{mission.mission_name}</b></td>
             <td>{mission.description}</td>
             <td>
-              <span>
+              <div className="status">
                 {mission.reserved && 'Active'}
                 {!mission.reserved && 'Not a Member'}
-              </span>
+              </div>
             </td>
             <td>
               <button

@@ -1,12 +1,16 @@
 import { NavLink } from 'react-router-dom';
 
-const NavLinks = () => (
+export default function NavLinks() {
+  const activeStyle = {
+    textDecoration: 'underline',
+  };
+  return (
   <>
-    <NavLink to="/">Rockets</NavLink>
-    <NavLink to="/Missions">Missions</NavLink>
+    <NavLink to="/" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Rockets</NavLink>
+    <NavLink to="/Missions" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Missions</NavLink>
     <p>|</p>
-    <NavLink to="/Profile">Profile</NavLink>
+    <NavLink to="/Profile" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Profile</NavLink>
   </>
-);
+  );
+}
 
-export default NavLinks;
