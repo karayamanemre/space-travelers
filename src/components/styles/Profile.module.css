@@ -17,10 +17,14 @@
 
 .profile_mission_title {
   width: 100%;
-  height: 200px;
   border-collapse: collapse;
 }
 
 .profile_mission_tr {
   border: 1px solid #ddd;
+}
+
+.profile_mission_td {
+  height: 50px;
+  padding: 5px;
 }

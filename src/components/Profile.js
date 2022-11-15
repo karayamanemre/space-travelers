@@ -5,7 +5,6 @@ import styles from './styles/Profile.module.css';
 const Profile = () => {
   const missions = useSelector((state) => state.missions);
   const activeMissions = missions.filter((mission) => mission.reserved);
-
   return (
     <section className={styles.profile_section}>
       <div className={styles.profile_missions}>
@@ -14,7 +13,7 @@ const Profile = () => {
           <tbody>
             {activeMissions.map((mission) => (
               <tr className={styles.profile_mission_tr} key={mission.id}>
-                <td>{mission.mission_name}</td>
+                <td className={styles.profile_mission_td}>{mission.mission_name}</td>
               </tr>
             ))}
           </tbody>
