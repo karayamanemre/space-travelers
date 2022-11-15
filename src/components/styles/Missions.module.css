@@ -1,11 +1,11 @@
-table {
+.mission_table {
   margin: 25px 100px;
   border-collapse: collapse;
 }
 
-table,
-td,
-th {
+.mission_table,
+.mission_td,
+.mission_th {
   border: 2px solid #ddd;
   padding: 15px;
 }

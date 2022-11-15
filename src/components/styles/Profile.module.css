@@ -1,0 +1,16 @@
+section {
+  display: flex;
+  margin: 25px 100px;
+}
+
+.profile-missions {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 400px;
+  border: 1px solid #ddd;
+}
+
+.profile-mission-title {
+  width: 90%;
+}
