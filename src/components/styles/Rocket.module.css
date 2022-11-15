@@ -1,0 +1,38 @@
+.rocket_container {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin: 0 100px;
+}
+
+.rocket_container_figure {
+  flex: 0.2;
+}
+
+.rocket_container_figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.rocket_container_article {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.rocket_container_article_button {
+  background-color: #007bff;
+  height: 2rem;
+  width: 15%;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.rocket_container_article_button:hover {
+  background-color: #007bff9c;
+}

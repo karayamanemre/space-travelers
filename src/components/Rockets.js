@@ -1,12 +1,18 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import Rocket from './Rocket';
 
-export default function Rockets() {
+const Rockets = () => {
   const ans = useSelector((state) => state.rockets);
-  console.log(ans);
   return (
-    <div>
-      <h1>test rockets</h1>
-    </div>
+    <>
+      {
+        ans.map(((item) => (
+          <Rocket key={item.id} datas={item} />
+        )))
+      }
+    </>
   );
-}
+};
+
+export default Rockets;

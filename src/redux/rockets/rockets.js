@@ -22,7 +22,7 @@ export const fetchAPI = createAsyncThunk(FETCHED, async () => {
   return ans.map((item) => ({
     id: item.id,
     name: item.rocket_name,
-    type: item.rocket_type,
+    type: item.description,
     flickr_images: item.flickr_images.map((y) => y),
   }));
 });
