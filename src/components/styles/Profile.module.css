@@ -1,16 +1,21 @@
-section {
+.profile_section {
   display: flex;
   margin: 25px 100px;
 }
 
-.profile-missions {
+.profile_missions {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  width: 400px;
-  border: 1px solid #ddd;
+  width: 50%;
 }
 
-.profile-mission-title {
-  width: 90%;
+.profile_mission_title {
+  width: 100%;
+  height: 200px;
+  border-collapse: collapse;
+}
+
+.profile_mission_tr {
+  border: 1px solid #ddd;
 }
