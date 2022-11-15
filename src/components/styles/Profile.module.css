@@ -1,6 +1,7 @@
 .profile_section {
   display: flex;
   margin: 25px 100px;
+  gap: 25px;
 }
 
 .profile_missions {
@@ -8,6 +9,10 @@
   flex-direction: column;
   justify-items: center;
   width: 50%;
+}
+
+.profile_missions h2 {
+  margin: 25px 0;
 }
 
 .profile_mission_title {

@@ -22,6 +22,13 @@ const Profile = () => {
       </div>
       <div>
         <h2>My Rockets</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td />
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
   );
