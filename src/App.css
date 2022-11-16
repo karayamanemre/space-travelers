@@ -11,3 +11,11 @@ body {
   color: #000;
   background: #fff;
 }
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
