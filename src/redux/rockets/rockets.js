@@ -2,12 +2,24 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const FETCHED = 'spacetraveller/rockets/fetchAPI';
+const RESERVED = 'spacetraveller/rockets/reserved';
+const UNRESERVED = 'spacetraveller/rockets/notReserved';
 const url = 'https://api.spacexdata.com/v3/rockets';
 
 const rocketsReducer = (state = [], actions) => {
   switch (actions.type) {
     case 'spacetraveller/rockets/fetchAPI/fulfilled':
       return actions.payload;
+    case RESERVED:
+      return state.map((rocket) => {
+        if (rocket.id !== actions.payload) return rocket;
+        return { ...rocket, reserved: true };
+      });
+    case UNRESERVED:
+      return state.map((rocket) => {
+        if (rocket.id !== actions.payload) return rocket;
+        return { ...rocket, reserved: false };
+      });
     default:
       return state;
   }
@@ -25,3 +37,6 @@ export const fetchAPI = createAsyncThunk(FETCHED, async () => {
     flickr_images: item.flickr_images.map((y) => y),
   }));
 });
+
+export const reserved = (payload) => ({ type: RESERVED, payload });
+export const notReserved = (payload) => ({ type: UNRESERVED, payload });
