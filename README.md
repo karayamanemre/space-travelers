@@ -2,7 +2,7 @@
 
 # Space Travelers Hub
 
->
+> Space Travelers is a SPA that allow users to book rockets and join selected space missions. Built with React.
 
 ## Built With
 
@@ -11,7 +11,7 @@
 
 ## Live Demo
 
--
+- [Space Travelers](https://spacetravelers-karayamanemre.netlify.app/Missions)
 
 ## Getting Started
 
