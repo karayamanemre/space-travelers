@@ -1,7 +1,7 @@
 const apiUrl = 'https://api.spacexdata.com/v3/missions';
-const SHOW_MISSIONS = 'space-travelers-hub/missions/SHOW_MISSIONS';
-const JOIN_MISSIONS = 'space-travelers-hub/missions/JOIN_MISSIONS';
-const LEAVE_MISSIONS = 'space-travelers-hub/missions/LEAVE_MISSIONS';
+const SHOW_MISSIONS = 'space-travelers/missions/SHOW_MISSIONS';
+const JOIN_MISSIONS = 'space-travelers/missions/JOIN_MISSIONS';
+const LEAVE_MISSIONS = 'space-travelers/missions/LEAVE_MISSIONS';
 
 export const showMissions = (data) => ({
   type: SHOW_MISSIONS,

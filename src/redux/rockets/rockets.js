@@ -18,7 +18,6 @@ export default rocketsReducer;
 export const fetchAPI = createAsyncThunk(FETCHED, async () => {
   const dataApi = await axios.get(url);
   const ans = dataApi.data;
-  console.log('helossa', ans);
   return ans.map((item) => ({
     id: item.id,
     name: item.rocket_name,
