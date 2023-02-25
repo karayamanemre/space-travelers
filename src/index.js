@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import store from './redux/configureStore';
 import App from './App';
 import { fetchAPI } from './redux/rockets/rockets';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 store.dispatch(fetchAPI());
