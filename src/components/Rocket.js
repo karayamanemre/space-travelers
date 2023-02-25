@@ -17,8 +17,24 @@ const Rocket = (props) => {
         <img src={props.datas.flickr_images[0]} alt="rocket" />
       </figure>
       <article className="p-4">
-        <h2 className="text-xl font-bold mb-2">{props.datas.name}</h2>
-        <p className="text-gray-700 text-base mb-4">{props.datas.type}</p>
+        <h2 className="text-2xl font-bold mb-2">{props.datas.name}</h2>
+        <h4 className="text-lg font-bold mb-2">
+          First Flight:
+          {props.datas.first_flight}
+        </h4>
+        <p className="text-gray-700 text-base mb-4">
+          {props.datas.description}
+        </p>
+        <p className="text-gray-700 text-base mb-4">
+          <a
+            href={props.datas.wiki}
+            target="_blank"
+            rel="noreferrer"
+            className="after:content-['_↗']"
+          >
+            More info
+          </a>
+        </p>
         <button
           type="button"
           className={buttonStyle}

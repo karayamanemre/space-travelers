@@ -4,7 +4,7 @@ import axios from 'axios';
 const FETCHED = 'spacetraveller/rockets/fetchAPI';
 const RESERVED = 'spacetraveller/rockets/reserved';
 const UNRESERVED = 'spacetraveller/rockets/notReserved';
-const url = 'https://api.spacexdata.com/v3/rockets';
+const url = 'https://api.spacexdata.com/v4/rockets';
 
 const rocketsReducer = (state = [], actions) => {
   switch (actions.type) {
@@ -32,8 +32,10 @@ export const fetchAPI = createAsyncThunk(FETCHED, async () => {
   const ans = dataApi.data;
   return ans.map((item) => ({
     id: item.id,
-    name: item.rocket_name,
-    type: item.description,
+    name: item.name,
+    description: item.description,
+    first_flight: item.first_flight,
+    wiki: item.wikipedia,
     flickr_images: item.flickr_images.map((y) => y),
   }));
 });
