@@ -2,12 +2,13 @@
 
 # Space Travelers Hub
 
-> Space Travelers is a SPA that allow users to book rockets and join selected space missions. Built with React and SpaceX API.
+> Space Travelers is a SPA that allow users to book rockets and join selected space missions. Built with React and [SpaceX API.](https://github.com/r-spacex/SpaceX-API)
 
 ## Built With
 
 - React
 - Redux
+- TailwindCSS
 
 ## Live Demo
 
